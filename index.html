@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Games Download - Free Games 2025</title>
+    <meta name="description" content="Download free PC games. GTA 5, Cyberpunk 2077, Minecraft, FIFA and more. Latest games pre-installed and ready to play.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #0a0a0a;
+            padding: 20px 0;
+            border-bottom: 2px solid #cc0000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            color: #cc0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cc0000;
+        }
+
+        /* HERO BANNER */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><text x="50%25" y="50%25" font-size="120" fill="%23666" text-anchor="middle" dominant-baseline="middle">PC GAMES</text></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid #cc0000;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .hero-btn {
+            background: #cc0000;
+            color: #ffffff;
+            padding: 18px 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            border: 2px solid #cc0000;
+            display: inline-block;
+            transition: all 0.3s;
+            font-size: 1.1em;
+        }
+
+        .hero-btn:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+            box-shadow: 0 0 30px rgba(204, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 60px 0 40px 0;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #cc0000;
+        }
+
+        /* GAME GRID */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .game-card {
+            background: #0f0f0f;
+            border: 1px solid #1a1a1a;
+            overflow: hidden;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            border-color: #cc0000;
+            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.4);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #333;
+            border-bottom: 2px solid #cc0000;
+        }
+
+        .game-info {
+            padding: 25px;
+        }
+
+        .game-title {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .game-meta {
+            color: #666;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .game-description {
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background: #cc0000;
+            color: #ffffff;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: all 0.3s;
+            border: 2px solid #cc0000;
+            width: 100%;
+            text-align: center;
+        }
+
+        .download-btn:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+            box-shadow: 0 5px 15px rgba(204, 0, 0, 0.5);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a0a0a;
+            border-top: 2px solid #1a1a1a;
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+            margin-top: 80px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 0.8em;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <div class="logo">🎮 PC GAMES</div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#games">GAMES</a></li>
+                <li><a href="#new">NEW</a></li>
+                <li><a href="#popular">POPULAR</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>NEW GAMES<br>AVAILABLE NOW</h1>
+            <p>Download the latest PC games free. Pre-installed and ready to play.</p>
+            <a href="#games" class="hero-btn">EXPLORE GAMES</a>
+        </div>
+    </section>
+
+    <!-- GAMES SECTION -->
+    <div class="container">
+        <h2 class="section-title" id="games">LATEST GAMES</h2>
+
+        <div class="games-grid">
+
+            <!-- GAME 1: GTA 5 -->
+            <div class="game-card">
+                <div class="game-image">🚗</div>
+                <div class="game-info">
+                    <h3 class="game-title">GTA 5</h3>
+                    <div class="game-meta">72 GB • Action • Open World • 2015</div>
+                    <p class="game-description">
+                        Grand Theft Auto V is the ultimate open world action game. 
+                        Play as three characters in Los Santos. Rob banks, complete missions, 
+                        and explore the massive city. Includes GTA Online multiplayer.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+            <!-- GAME 2: MINECRAFT -->
+            <div class="game-card">
+                <div class="game-image">⛏️</div>
+                <div class="game-info">
+                    <h3 class="game-title">MINECRAFT</h3>
+                    <div class="game-meta">500 MB • Sandbox • Creative • 2011</div>
+                    <p class="game-description">
+                        The ultimate sandbox game. Build anything in creative mode or 
+                        survive in survival mode. Mine resources, craft tools, and explore 
+                        infinite worlds. Play with friends online.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+            <!-- GAME 3: CYBERPUNK 2077 -->
+            <div class="game-card">
+                <div class="game-image">🌆</div>
+                <div class="game-info">
+                    <h3 class="game-title">CYBERPUNK 2077</h3>
+                    <div class="game-meta">70 GB • RPG • Cyberpunk • 2020</div>
+                    <p class="game-description">
+                        Open world RPG set in Night City. Play as V, a mercenary. 
+                        Customize your character with cyberware. Make choices that shape 
+                        the story. Includes Phantom Liberty DLC.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+            <!-- GAME 4: FIFA 25 -->
+            <div class="game-card">
+                <div class="game-image">⚽</div>
+                <div class="game-info">
+                    <h3 class="game-title">FIFA 25</h3>
+                    <div class="game-meta">45 GB • Sports • Football • 2024</div>
+                    <p class="game-description">
+                        The ultimate football game. Play as your favorite teams. 
+                        Build Ultimate Team. Career Mode included. New animations 
+                        and improved gameplay with all latest teams.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+            <!-- GAME 5: ELDEN RING -->
+            <div class="game-card">
+                <div class="game-image">⚔️</div>
+                <div class="game-info">
+                    <h3 class="game-title">ELDEN RING</h3>
+                    <div class="game-meta">60 GB • Action RPG • Fantasy • 2022</div>
+                    <p class="game-description">
+                        Fantasy action RPG from FromSoftware and George R.R. Martin. 
+                        Explore the massive Lands Between. Fight legendary bosses. 
+                        Game of the Year winner.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+            <!-- GAME 6: GOD OF WAR -->
+            <div class="game-card">
+                <div class="game-image">🪓</div>
+                <div class="game-info">
+                    <h3 class="game-title">GOD OF WAR</h3>
+                    <div class="game-meta">80 GB • Action • Adventure • 2022</div>
+                    <p class="game-description">
+                        Play as Kratos and Atreus in Norse mythology. Battle gods and 
+                        monsters. Deep father-son story. Brutal combat with the 
+                        Leviathan Axe. Epic adventure.
+                    </p>
+                    <a href="#" class="download-btn">DOWNLOAD NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p><strong>PC GAMES DOWNLOAD</strong></p>
+            <p>All games belong to their respective owners.</p>
+            <p>For educational and testing purposes only.</p>
+            <p>© 2025 PC Games Download</p>
+        </div>
+    </footer>
+
+</body>
+</html>
